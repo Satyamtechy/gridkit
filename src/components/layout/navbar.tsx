@@ -16,7 +16,10 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-rail/50 bg-void/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3">
-        <Link href="/" className="text-lg font-semibold text-frost">GridKit</Link>
+        <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-frost">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" fill="#3b9eff"/><rect x="18" y="2" width="12" height="5" rx="1.5" fill="#9281f7"/><rect x="18" y="10" width="12" height="4" rx="1.5" fill="#3ad389"/><rect x="2" y="18" width="6" height="12" rx="1.5" fill="#ffca16"/><rect x="11" y="18" width="6" height="12" rx="1.5" fill="#70b8ff"/><rect x="20" y="18" width="10" height="12" rx="2" fill="#ff9592"/></svg>
+          GridKit
+        </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map(l => (
             l.external ? (
